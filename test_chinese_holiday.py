@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime
-from holiday import is_holiday
+from chinese_holiday import is_holiday
 
 class HolidayTestCase(unittest.TestCase):
     def test_holiday(self):
