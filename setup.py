@@ -12,7 +12,7 @@ PY_MODULES = ['chinese_holiday']
 URL = 'https://github.com/chariothy/Chinese-holiday.git'
 EMAIL = 'chariothy@gmail.com'
 AUTHOR = 'Henry TIAN'
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 LONG_DESCRIPTION = '''
 从国务院网站解析节假日信息的小工具。
@@ -86,7 +86,7 @@ setup(
         # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
     # $ setup.py publish support.

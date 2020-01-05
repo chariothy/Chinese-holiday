@@ -10,6 +10,10 @@ pipenv install
 
 ```parse_holiday_info(url)			#从url的页面中解析出节假日信息（与search_notice_url配合使用）```
 
+```get_holiday_data('2020')    #返回缓存文件中的假日信息```
+
+```get_holiday_data('2020', True)    #强制重新解析并返回假日信息```
+
 #### 缓存
 工具会默认将解析的结果保存在holiday.json文件中，避免重复解析，可以使用
 ```is_holiday('2019-10-10', True)```来强制解析

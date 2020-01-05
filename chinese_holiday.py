@@ -20,7 +20,7 @@ from urllib import parse
 HOLIDAY_DATA_PATH = os.path.join(os.getcwd(), 'holiday.json')
 
 
-def _load_holiday_data(year, force_refresh=False):
+def get_holiday_data(year, force_refresh=False):
     """加载节假日数据，没有则去国务院网站解析
     
     Keyword Arguments:
@@ -69,7 +69,7 @@ def is_holiday(date_time):
     assert type(date_time) == datetime
 
     year = date_time.strftime('%Y')
-    holiday_lines = _load_holiday_data(year)
+    holiday_lines = get_holiday_data(year)
     assert type(holiday_lines) == list and len(holiday_lines) > 0
     for holiday_line in holiday_lines:
         from_date, to_date, work = holiday_line
