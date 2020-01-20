@@ -6,15 +6,25 @@
 pip install Chinese-holiday
 
 #### Usage
-```is_holiday('2019-10-10')    # Check if one day is a holiday (including normal weekend, not including working weekend)```
+> Check if one day is a holiday (including normal weekend, not including working weekend)
 
-```search_notice_url（'2020')		# Search url for notice of 2020 holiday```
+```is_holiday('2019-10-10')```
 
-```parse_holiday_info(url)			# Parse holiday info from url```
+> Search url for notice of 2020 holiday
 
-```get_holiday_data('2020')    # Return holiday data from cache```
+```search_notice_url（'2020')```
 
-```get_holiday_data('2020', True)    # Forcely return holiday data from website```
+> Parse holiday info from url
+
+```parse_holiday_info(url)```
+
+> Return holiday data from cache
+
+```get_holiday_data('2020')```
+
+> Forcely return holiday data from website
+
+```get_holiday_data('2020', True)```
 
 #### Cache
 The utility will cache parsed result into holiday.json, you can use 

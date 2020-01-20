@@ -12,7 +12,7 @@ PY_MODULES = ['chinese_holiday']
 URL = 'https://github.com/chariothy/Chinese-holiday.git'
 EMAIL = 'chariothy@gmail.com'
 AUTHOR = 'Henry TIAN'
-VERSION = '0.1.4'
+VERSION = '0.1.5'
 
 
 # What packages are required for this module to be executed?
@@ -67,7 +67,8 @@ setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    long_description='',
+    long_description=open('README.md', encoding='utf-8').read(),
+    long_description_content_type="text/markdown",
     author=AUTHOR,
     author_email=EMAIL,
     url=URL,
