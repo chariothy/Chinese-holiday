@@ -1,19 +1,21 @@
-## 从国务院网站解析节假日信息的小工具
+## Utility from parsing Chinese holiday from official website
 
-#### 安装
-pipenv install
+[Chinese 中文](README_CN.md)
 
-#### 使用
-```is_holiday('2019-10-10')    #判断某一天是否为节假日（含周末与法定节假日，不含规定上班的日期）```
+#### Install
+pip install Chinese-holiday
 
-```search_notice_url（'2020')		#查找发布2020节假日公告的网址```
+#### Usage
+```is_holiday('2019-10-10')    # Check if one day is a holiday (including normal weekend, not including working weekend)```
 
-```parse_holiday_info(url)			#从url的页面中解析出节假日信息（与search_notice_url配合使用）```
+```search_notice_url（'2020')		# Search url for notice of 2020 holiday```
 
-```get_holiday_data('2020')    #返回缓存文件中的假日信息```
+```parse_holiday_info(url)			# Parse holiday info from url```
 
-```get_holiday_data('2020', True)    #强制重新解析并返回假日信息```
+```get_holiday_data('2020')    # Return holiday data from cache```
 
-#### 缓存
-工具会默认将解析的结果保存在holiday.json文件中，避免重复解析，可以使用
-```is_holiday('2019-10-10', True)```来强制解析
+```get_holiday_data('2020', True)    # Forcely return holiday data from website```
+
+#### Cache
+The utility will cache parsed result into holiday.json, you can use 
+```is_holiday('2019-10-10', True)``` to forcely refresh it.
