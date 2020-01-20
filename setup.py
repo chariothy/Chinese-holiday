@@ -7,7 +7,7 @@ from setuptools import setup, Command
 
 # Package meta-data.
 NAME = 'Chinese-holiday'
-DESCRIPTION = '从国务院网站解析节假日信息的小工具'
+DESCRIPTION = 'Chinese holiday for Python'
 PY_MODULES = ['chinese_holiday']
 URL = 'https://github.com/chariothy/Chinese-holiday.git'
 EMAIL = 'chariothy@gmail.com'
