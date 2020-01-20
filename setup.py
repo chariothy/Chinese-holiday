@@ -12,7 +12,7 @@ PY_MODULES = ['chinese_holiday']
 URL = 'https://github.com/chariothy/Chinese-holiday.git'
 EMAIL = 'chariothy@gmail.com'
 AUTHOR = 'Henry TIAN'
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 LONG_DESCRIPTION = '''
 从国务院网站解析节假日信息的小工具。
