@@ -13,7 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 import re, os, json
 import datetime as dt
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 from urllib import parse
 
@@ -82,6 +82,23 @@ def is_holiday(date_time):
     else:
         return False
     return True
+
+
+def get_latest_workday(begin=datetime.today()):
+    """获取最近的一个工作日
+    
+    Keyword Arguments:
+        begin {datetime} -- 开始日 (default: {datetime.today()})
+    
+    Returns:
+        datetime -- 最近的一个工作日
+    """
+    start = begin
+    while True:
+        if not is_holiday(start.strftime('%Y-%m-%d')):
+            break
+        start = start - timedelta(days=1)
+    return start
 
 
 def search_notice_url(year):

@@ -12,7 +12,7 @@ PY_MODULES = ['chinese_holiday']
 URL = 'https://github.com/chariothy/Chinese-holiday.git'
 EMAIL = 'chariothy@gmail.com'
 AUTHOR = 'Henry TIAN'
-VERSION = '0.1.5'
+VERSION = '0.1.6'
 
 
 # What packages are required for this module to be executed?

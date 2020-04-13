@@ -26,6 +26,10 @@ pip install Chinese-holiday
 
 ```get_holiday_data('2020', True)```
 
+> Get latest work day (default fome today)
+
+```get_latest_workday()```
+
 #### Cache
 The utility will cache parsed result into holiday.json, you can use 
 ```is_holiday('2019-10-10', True)``` to forcely refresh it.

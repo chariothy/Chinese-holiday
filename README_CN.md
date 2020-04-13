@@ -24,6 +24,10 @@ pip install Chinese-holiday
 
 ```get_holiday_data('2020', True)```
 
+> 获取最近的一个工作日（默认从当天开始）
+
+```get_latest_workday()```
+
 #### 缓存
 工具会默认将解析的结果保存在holiday.json文件中，避免重复解析，可以使用
 ```is_holiday('2019-10-10', True)```来强制解析
